@@ -45,7 +45,8 @@ function acf_qtranslate_plugin_format_value_for_api($value) {
 	return $value;
 }
 
-
+/*
+Commented to avoid warnings
 add_action('plugins_loaded', 'acf_qtranslate_monkey_patch', 3);
 function acf_qtranslate_monkey_patch() {
 	global $q_config;
@@ -61,3 +62,4 @@ function acf_qtranslate_monkey_patch() {
 		$q_config['js']['qtrans_hook_on_tinyMCE'] = preg_replace("/(qtrans_save\(switchEditors\.pre_wpautop\(o\.content\)\);)/", "if (ed.editorId.match(/^qtrans_/)) \$1", $q_config['js']['qtrans_hook_on_tinyMCE']);
 	}
 }
+*/
