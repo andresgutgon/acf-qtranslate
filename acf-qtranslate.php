@@ -46,7 +46,7 @@ function acf_qtranslate_plugin_format_value_for_api($value) {
 }
 
 /*
-Commented to avoid warnings. Installed via composer iujuuu!
+Commented to avoid warnings.
 add_action('plugins_loaded', 'acf_qtranslate_monkey_patch', 3);
 function acf_qtranslate_monkey_patch() {
 	global $q_config;
